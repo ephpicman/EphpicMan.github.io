@@ -1,14 +1,768 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EphpicMan</title>
-</head>
-<body>
+    <head>
+        <meta charset="utf-8" />
+        <title>EphpicMan | Senior PHP Engineer - Back-End Architect - WordPress Developer</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <style>
+            :root {
+                --color: #0F766E;
+            }
+            html {
+                font-size: 16px;
+            }
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: monospace;
+                font-weight: 400;
+                font-style: normal;
+                outline: none;
+                border: none;
+                line-height: 1.5rem;
+                text-decoration: none;
+                cursor: default;
+            }
+            h1 {
+                font-weight: 900;
+                font-size: 1.5rem;
+                color: var(--color);
+                margin: 1rem 0 0.5rem 0;
+            }
+            h2 {
+                margin: 1rem 0;
+                font-weight: 900;
+                font-size: 1.25rem;
+                border-left: solid 0.5rem var(--color);
+                background-color: #eeeeee;
+                padding: 1rem;
+                border-left-style: double;
+                border-radius: 0.5rem;
+            }
+            h3 {
+                margin: 1rem 0;
+                font-weight: 900;
+                font-size: 1.125rem;
+                color: var(--color);
+            }
+            h4 {
+                background-color: #ffffff;
+                padding: 0.5rem 0.5rem;
+                margin:0;
+                color: #333333;
+                font-family: monospace;
+                font-size: 1rem;
+                font-weight: 900;
+                line-height: 1.6;
+            }
+            body {
+                background-color: #ffffff;
+                padding: 16px;
+                color: #333333;
+            }
+            hr {
+                border-bottom: 0.5rem double var(--color);
+                margin: 1rem 0;
+            }
+            ul,
+            ol {
+                padding: 0 0 0 2rem;
+                margin: 0.25rem 0;
+            }
+            p {
+                margin: 0.5rem 0;
+            }
+            main,
+            header,
+            footer {
+                max-width: 1024px;
+                margin: auto;
+            }
+            a {
+                color: var(--color);
+                cursor: pointer;
+            }
+            a:hover {
+                color: #333333;
+                text-decoration: underline;
+            }
+            strong, b {
+                font-weight: 900;
+            }
+            table {table-layout:fixed;}
+            th{font-weight:900;text-align:left;}
+            td{text-align:left;}
+            td,th{padding: 0.125rem 0.25rem;}
+            .action-button {
+                font-size: 0.75rem;
+                padding: 0.25rem 0.75rem;
+                background-color: var(--color);
+                color: #fff;
+                border-radius: 0.5rem;
+            }
+            .action-button-outline {
+                font-size: 0.75rem;
+                padding: 0.25rem 0.75rem;
+                border: solid 0.0625rem var(--color);
+                color: var(--color);
+                border-radius: 0.5rem;
+                cursor: pointer;
+            }
+            .action-button-outline:hover {
+                background-color: var(--color);
+                color: #fff;
+                text-decoration: none;
+            }
+            .right {
+                float: right;
+            }
+            .action-button:hover {
+                background-color: #333333;
+                color: #ffffff;
+                text-decoration: none;
+            }
+            .badge {
+                background-color: #333333;
+                color: #ffffff;
+                font-size: 0.66666rem;
+                font-weight: 900;
+                padding: 0.5rem 1rem;
+                margin: 0 0.25rem;
+                border-radius: 1rem;
+            }
+            .badge-light {
+                background-color: #eeeeee;
+                color: #333333;
+                font-size: 0.75rem;
+                padding: 0.25rem 0.75rem;
+                border-radius: 0.5rem;
+            }
+            .center-text {
+                text-align: center;
+            }
+            @media print {
+                .hide-in-print {
+                    display: none !important;
+                }
+                .page-break {
+                    break-before: page;
+                    page-break-before: always;
+                }
+                html {font-size: 12px}
+                .technologies ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.15rem 0.75rem;
+                    margin: 0;
+                    padding: 0;
+                    padding-left:1rem;
+                    list-style: none;
+                }
 
-    <h1>EphpicMan</h1>
-    <p>PHP Architect | Framework Engineer</p>
+                .technologies li {
+                    white-space: nowrap;
+                }
 
-</body>
+                .technologies li:not(:last-child)::after {
+                    content: " ·";
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>EphpicMan | Sina Kuhestani</h1>
+            <p>
+                <strong>Senior PHP Engineer | Backend Architect | WordPress Developer</strong>
+                <br />
+                <span>Mashhad, Iran</span>
+                <br />
+                <span>Open to Senior PHP roles and freelance backend projects</span>
+            </p>
+            <p>
+                <a target="_blank" href="mailto:sinakuhestani@gmail.com">sinakuhestani@gmail.com</a>
+                <a target="_blank" href="https://www.linkedin.com/in/ephpicman" class="hide-in-print">Linkedin</a>
+                <a target="_blank" href="https://github.com/ephpicman" class="hide-in-print">GitHub</a>
+                <a target="_blank" href="https://ephpicman.github.io" class="hide-in-print">Website</a>
+                <a target="_blank" href="/cv.pdf" class="action-button right hide-in-print">Download CV</a>
+            </p>
+            <hr />
+            <p>
+                <span class="badge-light">PHP Engineering</span>
+                <span class="badge-light">Backend Architecture</span>
+                <span class="badge-light">Laravel</span>
+                <span class="badge-light">WordPress</span>
+                <span class="badge-light">API Development</span>
+            </p>
+            <p>
+                Senior PHP Engineer with 9+ years of experience building and modernising backend applications and software products. Experienced in software architecture, legacy system refactoring, API development, and performance optimisation across PHP, Laravel, Symfony, and WordPress. I combine hands-on engineering with architectural thinking to build modular, testable, and maintainable systems.
+            </p>
+            <p>
+                Combining hands-on engineering with architectural thinking, I focus on building modular, testable, and maintainable systems. My work spans commercial platforms, internal management systems, custom CMS solutions, and independent developer tools.
+            </p>
+            <article>
+                <h3>Key Highlights:</h3>
+                <ul>
+                    <li>
+                        Led backend architecture and API development for ICR, supporting travel agency workflows and partner integrations.
+                    </li>
+                    <li>
+                        Re-engineered legacy systems into modular, maintainable architectures using modern PHP practices.
+                    </li>
+                    <li>
+                        Introduced automated testing, refactoring, and static analysis to improve software quality and maintainability.
+                    </li>
+                    <li>Achieved performance improvements of up to 8× in critical backend operations.</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Currently open to:</h3>
+                <ul>
+                    <li>Senior PHP Engineer and Backend Engineering roles</li>
+                    <li>Freelance PHP and backend development projects</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Languages:</h3>
+                <ul>
+                    <li>Persian — Native</li>
+                    <li>English — Upper-intermediate (B2)</li>
+                    <li>Portuguese — Elementary (A1)</li>
+                    <li>Turkish — Basic</li>
+                </ul>
+                <p class="hide-in-print">
+                    <b>Fun fact</b>: I’m actively learning Portuguese and can already handle greetings and basic
+                    conversations: Olá, Bom dia, Boa tarde!
+                </p>
+            </article>
+        </header>
+        <main>
+            <section class="">
+                <h2>Core Expertise</h2>
+                <ul>
+                    <li>
+                        <strong>Backend Engineering</strong>: PHP · Laravel · RESTful APIs · Object-Oriented Programming · Server-Side Development
+                    </li>
+                    <li>
+                        <strong>Software Architecture</strong>: Architectural Design · Design Patterns · SOLID Principles · Modular Architecture · Separation of Concerns
+                    </li>
+                    <li>
+                        <strong>Software Design &amp; Engineering</strong>: Abstraction · Reusable Components · Refactoring · Code Maintainability · Technical Problem-Solving
+                    </li>
+                    <li>
+                        <strong>Data &amp; Integration</strong>: Database Design · Data Modelling · API Integration
+                    </li>
+                    <li>
+                        <strong>Quality &amp; Reliability</strong>: Unit Testing · Debugging · Error Handling · Static Analysis · Code Quality
+                    </li>
+                    <li>
+                        <strong>Product Engineering</strong>: WordPress Development · Plugin Architecture · Developer Tools · Software Product Development
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Selected Projects</h2>
+                <article class="project">
+                    <h3>Numerus <a class="action-button-outline right hide-in-print" href="https://github.com/ephpicman/Numerus">Source Code</a></h3>
+                    <p class="hide-in-print"><i class="badge-light">PHP Extension</i> . <i class="badge-light">In Development</i></p>
+                    <p>An independent PHP extension project focused on reusable mathematical, statistical, and fuzzy logic operations.</p>
+                    <section>
+                        <h4>Highlights:</h4>
+                        <ul>
+                            <li>Flexible data storage strategies</li>
+                            <li>Lazy transformations</li>
+                            <li>Matrix operations</li>
+                            <li>Probability and statistical operations</li>
+                            <li>Iterative optimisation algorithms</li>
+                        </ul>
+                    </section>
+                    <section class="technologies">
+                        <h4>Technology stack:</h4>
+                        <ul>
+                            <li>C</li>
+                            <li>Zend Engine API</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="project">
+                    <h3>EphpicMan Test Suite <a class="action-button-outline hide-in-print right" href="https://github.com/ephpicman/TestSuite">Source Code</a></h3>
+                    <p class="hide-in-print"><i class="badge-light">WordPress Plugin</i> . <i class="badge-light">In Development</i></p>
+                    <p>A WordPress plugin providing a lightweight testing infrastructure for WordPress developers.</p>
+                    <section>
+                        <h4>Highlights:</h4>
+                        <ul>
+                            <li>Built-in unit testing infrastructure</li>
+                            <li>Automated test execution within WordPress</li>
+                            <li>Developer-focused testing utilities</li>
+                        </ul>
+                    </section>
+                    <section class="technologies">
+                        <h4>Technology stack:</h4>
+                        <ul>
+                            <li>PHP</li>
+                            <li>WordPress Plugin API</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="project">
+                    <h3>RayaPress CMS</h3>
+                    <p class="hide-in-print"><i class="badge-light">PHP Application</i> . <i class="badge-light">Completed</i></p>
+                    <p>A legacy content management system re-engineered using Symfony, with a modular architecture and modern software engineering practices.</p>
+                    <section>
+                        <h4>Highlights:</h4>
+                        <ul>
+                            <li>Re-engineered legacy code into a modular Symfony application.</li>
+                            <li>Achieved over 90% test coverage across the backend codebase.</li>
+                            <li>Introduced static analysis using Psalm.</li>
+                            <li>Modernised legacy jQuery components.</li>
+                        </ul>
+                    </section>
+                    <section class="technologies">
+                        <h4>Technology stack:</h4>
+                        <ul>
+                            <li>PHP</li>
+                            <li>Symfony</li>
+                            <li>MySQL</li>
+                            <li>Psalm</li>
+                            <li>PHPUnit</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="project">
+                    <h3>ICR Car Rental API</h3>
+                    <p class="hide-in-print"><i class="badge-light">PHP Application</i> . <i class="badge-light">Completed</i></p>
+                    <p>A RESTful API for car rental operations, developed using Laravel.</p>
+                    <section>
+                        <h4>Highlights:</h4>
+                        <ul>
+                            <li>Refactored backend components using established design patterns.</li>
+                            <li>Achieved over 90% test coverage across newly developed code.</li>
+                        </ul>
+                    </section>
+                    <section class="technologies">
+                        <h4>Technology stack:</h4>
+                        <ul>
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="project">
+                    <h3>TopMart API</h3>
+                    <p class="hide-in-print"><i class="badge-light">PHP Application</i> . <i class="badge-light">Completed</i></p>
+                    <p>An e-commerce API built on the RayaPars API infrastructure, providing backend functionality for online retail operations.</p>
+                    <section>
+                        <h4>Highlights:</h4>
+                        <ul>
+                            <li>Designed and implemented RESTful endpoints following a consistent API structure.</li>
+                            <li>Applied a component-oriented architecture to support modular development and maintainability.</li>
+                        </ul>
+                    </section>
+                    <section class="technologies">
+                        <h4>Technology stack:</h4>
+                        <ul>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="project">
+                    <h3>IranServer Domain Registration API</h3>
+                    <p class="hide-in-print"><i class="badge-light">PHP Application</i> . <i class="badge-light">Completed</i></p>
+                    <p>A Laravel-based domain registration service developed as a microservice for IranServer's Gate API, integrating domain registration workflows with the platform's gateway infrastructure.</p>
+                    <section>
+                        <h4>Highlights:</h4>
+                        <ul>
+                            <li>Developed RESTful API endpoints for domain registration workflows.</li>
+                            <li>Implemented asynchronous processing using queue and scheduling mechanisms.</li>
+                        </ul>
+                    </section>
+                    <section class="technologies">
+                        <h4>Technology stack:</h4>
+                        <ul>
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>MySQL</li>
+                            <li>Redis</li>
+                        </ul>
+                    </section>
+                </article>
+            </section>
+            <section class="">
+                <h2>Professional Experience</h2>
+                <article>
+                    <h3>Web Engineer | PersianHotel | Tourism | Freelance | Mashhad | June 2026 – Sep 2026</h3>
+                    <p>Restored and stabilised a legacy web application following a major server failure, then improved its performance, reliability, and operational visibility.</p>
+                    <section>
+                        <h4>Key Responsibilities &amp; Contributions:</h4>
+                        <ul>
+                            <li>Recovered and reconfigured the application environment using an outdated backup following a major server failure.</li>
+                            <li>Diagnosed and resolved legacy application bugs to restore system functionality.</li>
+                            <li>Optimised caching mechanisms and SQL queries to improve application performance.</li>
+                            <li>Offloaded computationally intensive search operations to Web Workers, keeping the browser's main thread responsive.</li>
+                            <li>Designed and implemented a custom logging/monitoring system (using a service worker) to improve diagnostics and troubleshooting.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Achievements:</h4>
+                        <ul>
+                            <li>Restored a previously non-functional production application from a several-year-old backup and established custom logging infrastructure for ongoing diagnosis and maintenance.</li>
+                            <li>Improved search processing efficiency through background execution and optimised database queries.</li>
+                        </ul>
+                    </section>
+                    <section class="technologies">
+                        <h4>Technologies &amp; Skills:</h4>
+                        <ul>
+                            <li>Web Workers</li>
+                            <li>Service Workers</li>
+                            <li>Backend &amp; Frontend Caching</li>
+                            <li>Application Recovery</li>
+                            <li>Custom Logging</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="page-break">
+                    <h3>Senior PHP Engineer | Tcharter | Tourism | Full-time | Mashhad | May 2025 – May 2026</h3>
+                    <p>Developed and maintained backend features while improving code quality and system design within an Extreme Programming (XP) environment.</p>
+                    <section>
+                        <h4>Key Responsibilities &amp; Contributions:</h4>
+                        <ul>
+                            <li>Led backend architecture and development for ICR and its API.</li>
+                            <li>Designed RESTful APIs and modular services for internal systems and external partners.</li>
+                            <li>Improved system scalability, reliability, and long-term maintainability.</li>
+                            <li>Streamlined travel agency workflows and partner integrations.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Achievements:</h4>
+                        <ul>
+                            <li>Optimised SQL queries and refactored the legacy PHP search algorithm, reducing response time from 40 seconds to 2 seconds.</li>
+                            <li>Refactored legacy utility-based business logic into a domain-oriented structure aligned with Domain-Driven Design (DDD) principles.</li>
+                        </ul>
+                    </section>
+                    <section class="technologies">
+                        <h4>Technologies &amp; Skills:</h4>
+                        <ul>
+                            <li>XP Software Development</li>
+                            <li>Domain-Driven Design (DDD)</li>
+                            <li>PHP-CS-Fixer</li>
+                        </ul>
+                    </section>
+                </article>
+                <article>
+                    <h3>Web Developer | RHSPASU | Other | Full-time | Mashhad | Nov 2023 - Mar 2025</h3>
+                    <p>Developed an HMVC PHP application for HR management with flexible fields, unlimited reports and structured data.</p>
+                    <section>
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li>Built flexible reporting and statistical modules.</li>
+                            <li>Delivered the project under strict network restrictions and limited infrastructure.</li>
+                        </ul>
+                    </section>
+                    <section class="technologies">
+                        <h4>Technologies &amp; Skills:</h4>
+                        <ul>
+                            <li>MongoDB</li>
+                            <li>Design Patterns</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="">
+                    <h3>Senior Back-End Engineer | KimiaDP | Software | Full-time | Mashhad | Jun 2022 - Oct 2023</h3>
+                    <p>Led a team of eight developers and designers in building a SaaS website builder using Laravel and WordPress, applying rapid application development (RAD) and prototyping.</p>
+                    <section>
+                        <h4>Key Responsibilities &amp; Contributions:</h4>
+                        <ul>
+                            <li>Led backend and frontend architecture and development for commercial products.</li>
+                            <li>Designed microservices and WordPress plugins to integrate WordPress with SaaS applications.</li>
+                            <li>Developed prototypes and maintained existing products.</li>
+                            <li>Implemented GitOps-based CI/CD workflows and development infrastructure.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li>Standardised the development process through prototyping, increasing development speed by approximately 1.5×.</li>
+                            <li>Standardised the design process by establishing shared design principles, reducing design time by approximately 30%.</li>
+                        </ul>
+                    </section>
+                    <section class="technologies">
+                        <h4>Technologies &amp; Skills:</h4>
+                        <ul>
+                            <li>RAD</li>
+                            <li>GitOps</li>
+                            <li>DevOps</li>
+                            <li>ADR</li>
+                            <li>TDD</li>
+                            <li>Psalm</li>
+                            <li>PHPStan</li>
+                            <li>Node.js</li>
+                            <li>Sass</li>
+                            <li>TypeScript</li>
+                            <li>Gulp</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="page-break">
+                    <h3>Senior Back-End Engineer | RayaPars | Software | Freelance | Mashhad | Nov 2021 - Apr 2022</h3>
+                    <p>Re-engineered the legacy RayaPars CMS using Symfony, introducing a modular, component-oriented architecture and developing core application components.</p>
+                    <section>
+                        <h4>Key Responsibilities &amp; Contributions:</h4>
+                        <ul>
+                            <li>Rebuilt the company’s CMS using Symfony and Docker.</li>
+                            <li>Designed a modular architecture to improve extensibility.</li>
+                            <li>Applied a component-oriented approach to software development.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li>Introduced unit testing practices, helping reduce bugs and support tickets.</li>
+                            <li>Improved code quality and deployment reliability.</li>
+                        </ul>
+                    </section>
+                    <section class="technologies">
+                        <h4>Technologies &amp; Skills:</h4>
+                        <ul>
+                            <li>Symfony</li>
+                            <li>Component Oriented Programming (COP)</li>
+                            <li>Modular Design</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="">
+                    <h3>Senior Back-End Developer | IranServer | Software | Full-time | Mashhad | May 2021 - Oct 2021</h3>
+                    <p>Developed, documented, and refactored RESTful APIs and WHMCS plugins.</p>
+                    <section>
+                        <h4>Key Responsibilities &amp; Contributions:</h4>
+                        <ul>
+                            <li>Developed RESTful APIs using Laravel.</li>
+                            <li>Produced technical documentation for backend components.</li>
+                            <li>Applied SOLID principles to improve code structure and maintainability.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li>Developed WHMCS modules and RESTful APIs following SOLID principles.</li>
+                            <li>Delivered maintainable backend components for hosting and billing systems.</li>
+                        </ul>
+                    </section>
+                    <section class="technologies">
+                        <h4>Technologies &amp; Skills:</h4>
+                        <ul>
+                            <li>WHMCS</li>
+                            <li>Laravel</li>
+                            <li>Docker</li>
+                            <li>Git</li>
+                            <li>Scrum</li>
+                            <li>PHPUnit</li>
+                            <li>Microservices</li>
+                            <li>Design Patterns</li>
+                            <li>SOLID Principles</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="">
+                    <h3>Back-End Developer | RayaPars | Software | Full-time | Mashhad | Jul 2020 - Apr 2021</h3>
+                    <p>Developed websites using RayaPars CMS, customising functionality to meet individual clients’ business requirements.</p>
+                    <section>
+                        <h4>Achievements:</h4>
+                        <ul>
+                            <li>Developed a modular page builder for RayaPars CMS.</li>
+                            <li>Reduced project delivery time and increased team capacity by approximately 15%.</li>
+                        </ul>
+                    </section>
+                    <section class="technologies">
+                        <h4>Technologies &amp; Skills:</h4>
+                        <ul>
+                            <li>RESTful APIs</li>
+                            <li>Team Collaboration</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="page-break">
+                    <h3>Back-End Developer | PersianHotel | Tourism | Full-time | Mashhad | Apr 2019 - Jun 2020</h3>
+                    <p>Rebuilt a legacy Joomla-based system using a custom PHP MVC architecture.</p>
+                    <section>
+                        <h4>Highlights:</h4>
+                        <ul>
+                            <li>Migrated a legacy Joomla system to a custom MVC-based PHP architecture.</li>
+                            <li>Improved critical backend performance by approximately 8× and reduced main-page load times by approximately 3×.</li>
+                        </ul>
+                    </section>
+                    <section class="technologies">
+                        <h4>Technologies &amp; Skills:</h4>
+                        <ul>
+                            <li>Object-Oriented Programming (OOP)</li>
+                            <li>Bootstrap</li>
+                            <li>SWOP APIs</li>
+                        </ul>
+                    </section>
+                </article>
+                <article>
+                    <h3>PHP Developer | Software | Freelance | Mashhad | Oct 2016 - Mar 2019</h3>
+                    <p>Developed PHP solutions for clients and organisations through freelance engagements.</p>
+                    <section>
+                        <h4>Highlights:</h4>
+                        <ul>
+                            <li>Delivered PHP and WordPress backend projects for clients.</li>
+                            <li>Developed custom applications, plugins, and themes.</li>
+                        </ul>
+                    </section>
+                    <section class="technologies">
+                        <h4>Technologies &amp; Skills:</h4>
+                        <ul>
+                            <li>PHP</li>
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                            <li>MySQL</li>
+                            <li>WordPress</li>
+                            <li>Matlab</li>
+                            <li>VB.NET</li>
+                        </ul>
+                    </section>
+                </article>
+            </section>
+            <section class="hide-in-print">
+                <h2>Engineering Principles</h2>
+                <ol>
+                    <li>Simplicity Over Unnecessary Complexity</li>
+                    <li>Purposeful Architecture</li>
+                    <li>Maintainability by Design</li>
+                    <li>Engineering Beyond Implementation</li>
+                </ol>
+            </section>
+            <section>
+                <h2>Technical stack</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Technologies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Programming Languages</td>
+                            <td>PHP, JavaScript, SQL, C</td>
+                        </tr>
+                        <tr>
+                            <td>Backend &amp; Platforms</td>
+                            <td>Laravel, Symfony, WordPress, WHMCS</td>
+                        </tr>
+                        <tr>
+                            <td>Architecture &amp; Practices</td>
+                            <td>OOP, Design Patterns, SOLID, DDD, TDD, Modular Architecture</td>
+                        </tr>
+                        <tr>
+                            <td>APIs &amp; Integration</td>
+                            <td>REST, JSON, HTTP</td>
+                        </tr>
+                        <tr>
+                            <td>Database</td>
+                            <td>MySQL, MariaDB, MongoDB, Redis</td>
+                        </tr>
+                        <tr>
+                            <td>Frontend</td>
+                            <td>HTML, Pug, CSS, Sass, TypeScript, jQuery</td>
+                        </tr>
+                        <tr>
+                            <td>Testing &amp; Code Quality</td>
+                            <td>PHPUnit, Psalm, PHPStan, PHP-CS-Fixer</td>
+                        </tr>
+                        <tr>
+                            <td>Development Tools</td>
+                            <td>Git, GitHub, Linux, Docker</td>
+                        </tr>
+                        <tr>
+                            <td>Build &amp; Dependency Tools</td>
+                            <td>Composer, Node.js, Gulp</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <!--<section>
+                <h2>Technical Writing</h2>
+                <article class="article">
+                    <h3>article <a class="action-button-outline right">Read More</a></h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... These cases are
+                        perfectly simple and easy to distinguish.
+                    </p>
+                </article>
+                <article class="article">
+                    <h3>article <a class="action-button-outline right">Read More</a></h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... These cases are
+                        perfectly simple and easy to distinguish.
+                    </p>
+                </article>
+                <article class="article">
+                    <h3>article <a class="action-button-outline right">Read More</a></h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... These cases are
+                        perfectly simple and easy to distinguish.
+                    </p>
+                </article>
+                <article class="article">
+                    <h3>article <a class="action-button-outline right">Read More</a></h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... These cases are
+                        perfectly simple and easy to distinguish.
+                    </p>
+                </article>
+            </section>-->
+            <!--<section>
+                <h2>Open Source</h2>
+                <article class="project">
+                    <h3>Title of Project</h3>
+                    <p><i>Project Category</i> . <i>Technology</i> . <i>Status</i></p>
+                    <p>Description</p>
+                    <section>
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 1</li>
+                            <li>item 1</li>a
+                            <li>item 1</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Technology stack</h4>
+                        <p><i>item</i> . <i>item</i> . <i>item</i> . <i>item</i></p>
+                        <p>
+                            <a class="action-button-outline">Source Code</a>
+                            <a class="action-button-outline">Live Demo</a>
+                            <a class="action-button-outline">Documentation</a>
+                        </p>
+                    </section>
+                </article>
+            </section>-->
+            <section>
+                <h2>Education</h2>
+                <article>
+                    <h3>PhD in Agricultural Economics</h3>
+                    <p>Specialisation: Production Economics and Management</p>
+                    <p>Ferdowsi University of Mashhad . 2023</p>
+                </article>
+            </section>
+            <hr class="hide-in-print"/>
+        </main>
+        <footer class="hide-in-print">
+            <p class="center-text">
+                Designed and engineered by Sina Kuhestani · EphpicMan
+                <br />
+                <br />
+                <a class="action-button-outline">Github</a>
+                <a class="action-button-outline">Linkedin</a>
+                <a class="action-button-outline">Contact</a>
+                <a class="action-button-outline">Email</a>
+            </p>
+        </footer>
+    </body>
 </html>
